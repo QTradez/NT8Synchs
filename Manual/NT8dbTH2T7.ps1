@@ -47,4 +47,4 @@ for ($i = 0; $i -lt $localPaths.Length; $i++) {
 }
 
 # Backup NinjaTrader.sqlite
-robocopy $"$env:USERPROFILE\Documents\NinjaTrader 8\db\NinjaTrader.sqlite" $"\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\Aw\NinjaTrader.sqlite" /e /XO
+robocopy $"$env:USERPROFILE\Documents\NinjaTrader 8\db\NinjaTrader.sqlite" $"\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\TH\NinjaTrader.sqlite" /e /XO

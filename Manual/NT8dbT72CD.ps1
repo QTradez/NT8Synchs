@@ -20,12 +20,12 @@ $localPaths = @(
 
 # OneDrive paths
 $netDrivePaths = @(
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\day",
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\minute",
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\replay",
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\tick",
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\workspaces",  
-    "\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\templates"
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\db\day",
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\db\minute",
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\db\replay"
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\db\tick",
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\workspaces",
+    "$env:USERPROFILE\OneDrive\Documents\NT8BackUp\templates"
 )
 
 # Ensure that both arrays have the same length
@@ -47,4 +47,4 @@ for ($i = 0; $i -lt $localPaths.Length; $i++) {
 }
 
 # Backup NinjaTrader.sqlite
-robocopy $"$env:USERPROFILE\Documents\NinjaTrader 8\db\NinjaTrader.sqlite" $"\\Dgl-w-000000093\c\Users\daqu4\OneDrive\Documents\NT8BackUp\db\Aw\NinjaTrader.sqlite" /e /XO
+robocopy $"$env:USERPROFILE\Documents\NinjaTrader 8\db\NinjaTrader.sqlite" $"$env:USERPROFILE\OneDrive\Documents\NT8BackUp\db\T7910\NinjaTrader.sqlite" /e /XO
